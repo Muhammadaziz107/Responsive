@@ -1,0 +1,40 @@
+.triangle .container {
+	padding: 80px 20px;
+}
+
+.triangle__box {
+	position: relative;
+	width: 200px;
+	height: 50px;
+	background-color: red;
+	border-radius: 5px;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		transform: translateX(-50%);
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-top: 15px solid red;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(-100%);
+		z-index: 11;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		border-radius: 50%;
+		background-color: white;
+		content: '';
+	}
+}

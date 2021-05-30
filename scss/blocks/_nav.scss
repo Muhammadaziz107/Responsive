@@ -1,0 +1,27 @@
+ .nav {
+     background-color: darkcyan;
+
+     &__list {
+         display: flex;
+         margin: 0;
+         padding: 0;
+         list-style-type: none;
+
+     }
+
+     &__item:hover {
+         background-color: green;
+     }
+
+     &__link {
+         display: inline-block;
+         padding: 10px;
+         color: #fff;
+         text-decoration: none;
+     }
+
+ }
+
+ .nav__link--active {
+     background-color: red;
+ }

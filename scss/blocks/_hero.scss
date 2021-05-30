@@ -1,0 +1,38 @@
+.hero .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 80px 20px;
+}
+
+.hero__info {
+	width: 100%;
+	max-width: 470px;
+	margin-right: 30px;
+}
+
+@media only screen and (max-width: 960px) {
+	.hero .container {
+		flex-direction: column;
+	}
+
+	.hero__info {
+		max-width: 80%;
+		margin-right: 0;
+	}
+
+	.hero__img {
+		order: -1;
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.hero__heading {
+		font-size: 18px;
+	}
+
+	.hero__paragraph {
+		font-size: 14px;
+	}
+}
